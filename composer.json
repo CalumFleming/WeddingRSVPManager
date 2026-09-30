@@ -8,15 +8,16 @@
     "require": {
         "php": "^8.3",
         "filament/filament": "^5.9",
-        "laravel/boost": "^2.10",
         "laravel/framework": "^13.17",
         "laravel/tinker": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "larastan/larastan": "^3.12",
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",
         "laravel/pint": "^1.27",
+        "laravel/boost": "^2.10",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
         "pestphp/pest": "^5.2"
@@ -68,7 +69,8 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
-        ]
+        ],
+        "analyse": "phpstan analyse"
     },
     "extra": {
         "laravel": {
